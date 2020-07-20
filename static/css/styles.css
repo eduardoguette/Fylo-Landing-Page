@@ -14,12 +14,10 @@
   display: none;
 }
 body {
+  background-color: var(--dark-Blue-Main);
   color: var(--white);
   font-family: var(--open-sans);
   margin: 0;
-}
-main{
-  background-color: var(--dark-Blue-Main);
 }
 .wrapper {
   max-width: 1024px;
@@ -128,7 +126,7 @@ h2 {
   margin-left: 0.25em;
 }
 .reviews{
-  padding-bottom: 7em;
+  padding-bottom: 15em;
 }
 .review-grid {
   display: grid;
@@ -165,6 +163,8 @@ h2 {
   letter-spacing: 0;
 }
 .form {
+
+
   margin-top: -10em;
   text-align: center;
   position: absolute;
@@ -173,7 +173,7 @@ h2 {
   background: transparent;
 }
 .form-grid {
-  background-color: var(--dark-Blue-Main);
+  background-color: var(--dark-Blue-testimonials);
   margin: 0 -2em;
   padding: 2.2em;
   border-radius: 0.5em;
