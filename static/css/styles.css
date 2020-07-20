@@ -61,9 +61,8 @@ h1 {
   line-height: 1.7;
 }
 .hero p {
-  width: 93%;
   margin: auto;
-  font-size: 0.85em;
+  font-size: 1em;
   line-height: 1.6;
   margin-bottom: 3em;
 }
@@ -78,6 +77,9 @@ h1 {
   color: var(--white);
   font-size: 0.8em;
 }
+.hero-grid > button {
+  width: 75%;
+}
 .features {
   margin-top: 10em;
 }
@@ -90,6 +92,7 @@ h1 {
 }
 .feature-item img {
   margin-bottom: 2em;
+  height: 4em;
 }
 h2 {
   font-size: 1.2em;
@@ -125,7 +128,7 @@ h2 {
   padding: 0;
   margin-left: 0.25em;
 }
-.reviews{
+.reviews {
   padding-bottom: 15em;
 }
 .review-grid {
@@ -163,8 +166,6 @@ h2 {
   letter-spacing: 0;
 }
 .form {
-
-
   margin-top: -10em;
   text-align: center;
   position: absolute;
@@ -198,8 +199,10 @@ h2 {
 }
 
 .footer {
-  padding-top: 20em;
+  padding-top: 8em;
   background-color: var(--dark-Blue-foo-back);
+  height: 100%;
+  padding-bottom: 2em;
 }
 
 .logo-foo {
@@ -239,4 +242,16 @@ h2 {
 }
 ul.list-contact {
   margin-top: -1.5em;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social a {
+  padding: .5em;
+  border: 1px solid white;
+  width: 20px;
+  text-align: center;
+  margin: .3em;
+  border-radius: 100%;
 }
