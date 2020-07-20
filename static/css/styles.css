@@ -134,7 +134,6 @@ h2 {
 .review {
   padding: 1em 2em;
   background-color: var(--dark-Blue-testimonials);
-  border: 1px solid red;
   margin-bottom: 2.5em;
   font-size: 0.8em;
   border-radius: 0.6em;
@@ -165,7 +164,7 @@ h2 {
   text-align: center;
 }
 .form-grid {
-  border: 1px solid red;
+ 
   background-color: var(--Dark-Blue-Main);
   margin: 0 -2em;
   padding: 2.2em;
