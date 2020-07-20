@@ -1,7 +1,8 @@
 :root {
   font-size: 14px;
   --dark-Blue: hsl(217, 28%, 15%);
-  --Dark-Blue-Main: hsl(218, 28%, 13%);
+  --dark-Blue-Main: hsl(218, 28%, 13%);
+  --dark-Blue-foo-back: hsl(216, 53%, 9%);
   --dark-Blue-testimonials: hsl(219, 30%, 18%);
   --white: hsl(0, 0%, 100%);
   --raleway: "Raleway", sans-serif;
@@ -13,11 +14,12 @@
   display: none;
 }
 body {
-  background-color: var(--dark-Blue);
   color: var(--white);
   font-family: var(--open-sans);
   margin: 0;
-
+}
+main{
+  background-color: var(--dark-Blue-Main);
 }
 .wrapper {
   max-width: 1024px;
@@ -125,7 +127,9 @@ h2 {
   padding: 0;
   margin-left: 0.25em;
 }
-
+.reviews{
+  padding-bottom: 7em;
+}
 .review-grid {
   display: grid;
   grid-row-gap: 2em;
@@ -161,16 +165,20 @@ h2 {
   letter-spacing: 0;
 }
 .form {
+  margin-top: -10em;
   text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 10;
+  background: transparent;
 }
 .form-grid {
- 
-  background-color: var(--Dark-Blue-Main);
+  background-color: var(--dark-Blue-Main);
   margin: 0 -2em;
   padding: 2.2em;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
-.form p{
+.form p {
   font-size: 1em;
 }
 .form input {
@@ -189,12 +197,46 @@ h2 {
   font-size: 0.7em;
 }
 
-footer {
-  margin: auto;
-  text-align: center;
-  color: var(--white);
+.footer {
+  padding-top: 20em;
+  background-color: var(--dark-Blue-foo-back);
 }
-footer a {
-  color: rgb(85, 219, 252);
+
+.logo-foo {
+  height: 3.5em;
+  margin-bottom: 1em;
+}
+
+.footer .wrapper {
+  margin-top: 10em;
+}
+.container-logos-text {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: flex-start;
+  margin: 1em 0;
+}
+.container-logos-text img {
+  margin: 0 2em 0 0;
+  text-align: left;
+  padding-top: 0.5em;
+}
+.container-logos-text p {
+  margin: 0;
+  padding: 0;
+  padding-top: 0.25em;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 5em 0;
+}
+.footer a {
+  color: var(--white);
   text-decoration: none;
+  margin-bottom: 1em;
+  display: block;
+}
+ul.list-contact {
+  margin-top: -1.5em;
 }
